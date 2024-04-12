@@ -1,0 +1,71 @@
+@import '@/styles/common/colors.scss';
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px 40px;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  backdrop-filter: blur(10px);
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-image: linear-gradient(to right, transparent, $color2, $color1, $color2, transparent) 1;
+
+  a {
+    text-decoration: none;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    a {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      color: $white;
+      transition: all 0.2s ease-in;
+
+      &.active {
+        color: $color1;
+      }
+      
+      &.chat {
+        padding: 16px 30px;
+        font-size: 1rem;
+        font-weight: bold;
+        background-image: linear-gradient(45deg, $color1, $color3 90%);
+        border-radius: 40px;
+        text-shadow: 1px 1px 1px rgba($color: $color4, $alpha: 0.3);
+        animation: chatBackground 10s infinite linear;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &:hover {
+        color: $color1;
+      }
+    }
+  }
+}
+.name {
+  font-size: 1.5rem;
+  color: $color1;
+}
+
+@keyframes chatBackground {
+  0% {
+    background-size: 100% 200px;
+  }
+
+  50% {
+    background-size: 300% 200px;
+  }
+
+  100% {
+    background-size: 100% 200px;
+  }
+}
