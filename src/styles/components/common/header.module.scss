@@ -16,11 +16,13 @@
     text-decoration: none;
   }
 
-  nav {
+  .navDesktop {
     display: flex;
     align-items: center;
     gap: 30px;
+  }
 
+  nav {
     a {
       font-size: 0.9rem;
       text-transform: uppercase;
@@ -51,6 +53,7 @@
     }
   }
 }
+
 .name {
   font-size: 1.5rem;
   color: $color1;
@@ -67,5 +70,39 @@
 
   100% {
     background-size: 100% 200px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .header {
+    padding: 20px 10px;
+
+    .navDesktop {
+      gap: 10px;
+
+      a {
+        font-size: 0.8rem;
+
+        &.chat {
+          padding: 12px 20px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .header {
+    padding: 20px 40px;
+    justify-content: space-between;
+
+    .navDesktop {
+      display: none;
+    }
   }
 }
