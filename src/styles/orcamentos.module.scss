@@ -8,7 +8,7 @@
   width: 100%;
   padding: 3% 10px 0px;
   background-color: $color4;
-  min-height: calc(100% - 96px);
+  min-height: calc(100% - 95px);
   background-color: #2e2e2e;
 
   h1 {
@@ -52,6 +52,7 @@
       width: 100%;
       padding: 10px 8px;
       border: 1px solid $color1;
+      background-color: #e2e2e2;
       outline: 3px solid transparent;
       border-radius: 2px;
   
@@ -79,20 +80,21 @@
       display: inline-block;
       width: 50%;
       min-width: 200px;
+      max-width: 300px;
       cursor: pointer;
+      font-size: 0.9rem;
       font-weight: bold;
-      padding: 10px 15px;
-      background-color: white;
-      border: 1px solid transparent;
-      outline: 2px solid transparent;
+      padding: 12px 15px;
+      background-color: $color1;
+      border: none;
       border-radius: 2px;
+      outline: 2px solid transparent;
+      transition: all 0.3s ease-in;
   
       &:hover {
         background-color: transparent;
         color: $white;
-        border-color: transparent;
-        outline: 2px solid $color1;
-        transition: all 0.3s ease-in;
+        outline-color: $color1;
       }
     }
   }

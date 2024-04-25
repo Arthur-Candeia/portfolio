@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { DM_Sans, Frank_Ruhl_Libre } from "next/font/google";
 import { Header } from "@/components/common/Header";
 import '@/styles/common/style.scss'
 
-const openSans = Open_Sans({ subsets: ["latin"] });
+const font = DM_Sans({weight: ['200', '400', '500', '600', '800'], subsets: ['latin'], variable: '--font-dm'})
+const font2 = Frank_Ruhl_Libre({weight: ['400', '500', '600', '700'], subsets: ['latin'], variable: '--font-frank'})
 
 export const metadata: Metadata = {
   title: "Arthur Candeia",
@@ -23,7 +24,7 @@ export default function RootLayout({
       <head>
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </head>
-      <body className={openSans.className}>
+      <body className={`${font.variable} ${font2.variable}`}>
         <Header />
         {children}
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
