@@ -8,14 +8,13 @@
   width: 100%;
   padding: 3% 10px 0px;
   background-color: $color4;
-  min-height: calc(100% - 95px);
+  min-height: 100%;
   background-color: #2e2e2e;
 }
 
 .ratings {
-
   .notebook {
-    width: 100vw;
+    width: 92vw;
     max-width: 700px;
     min-width: 280px;
     height: 30vw;
@@ -25,13 +24,43 @@
     background: #2e2e2e url("/notebook-shape.png") center center no-repeat scroll;
     background-size: cover;
 
-    .ratings {
+    .ratingsSlide {
       margin: 0px auto;
       width: 75%;
       min-width: 260px;
       height: 87%;
-      background-color: red;
-      opacity: 0.3;
+      padding: 10px 20px;
+      color: $white;
+
+      .rating {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        text-align: center;
+
+        .marks {
+          width: 75px;
+          height: 64px;
+        }
+        
+        p {
+          font-size: 0.9rem;
+        }
+
+        div {
+          .photo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+
+          p {
+            font-size: 0.7rem;
+          }
+        }
+      }
     }
   }
 }
@@ -39,5 +68,33 @@
 @media only screen and (max-width: 715px) {
   .ratings > .notebook {
     min-height: max(60vw, 200px);
+
+    .ratingsSlide {
+      padding: 5px;
+
+      .rating {
+        gap: 5px;
+
+        .marks {
+          width: 20px;
+          height: 17px;
+        }
+
+        p {
+          font-size: 0.7rem;
+        }
+
+        div {
+          .photo {
+            width: 15px;
+            height: 15px;
+          }
+
+          p {
+            font-size: 0.5rem;
+          }
+        }
+      }
+    }
   }
 }

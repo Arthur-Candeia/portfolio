@@ -10,7 +10,7 @@ import 'swiper/css'
 export function Ratings() {
   return (
     <Swiper
-      className={styles.ratings}
+      className={styles.ratingsSlide}
       lazyPreloadPrevNext={0}
       spaceBetween={150}
       autoplay={{delay: 5000, disableOnInteraction: false}}
@@ -18,11 +18,13 @@ export function Ratings() {
       loop
     >
       {allRatings.map((element, index) => (
-        <SwiperSlide key={index}>
-          <Image src="/marks.png" alt='Aspas icon' width={100} height={85}></Image>
+        <SwiperSlide key={index} className={styles.rating}>
+          <Image src="/marks.png" className={styles.marks} alt='Aspas icon' width={75} height={64}></Image>
           <p>{element.comment}</p>
-          <img src={element.img ?? '/user-icon.png'} alt="Foto do cliente" />
-          <div>{element.name}</div>
+          <div>
+            <img src={element.img ?? '/user-icon.png'} className={styles.photo} alt="Foto do cliente" />
+            <p>{element.name}</p>
+          </div>
         </SwiperSlide>
       ))}
     </Swiper>
