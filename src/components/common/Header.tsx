@@ -23,7 +23,7 @@ export function Header() {
   )
 }
 
-function Links() {
+export function Links() {
   const pathname = usePathname()
   const links = [
     {href: '/orcamentos', name: 'Orçamentos'},

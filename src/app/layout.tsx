@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Frank_Ruhl_Libre } from "next/font/google";
 import { Header } from "@/components/common/Header";
+import { Footer } from "@/components/common/Footer";
 import '@/styles/common/style.scss'
 
 const font = DM_Sans({weight: ['200', '400', '500', '600', '800'], subsets: ['latin'], variable: '--font-dm'})
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body className={`${font.variable} ${font2.variable}`}>
         <Header />
         {children}
+        <Footer />
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>AOS.init()</script>
       </body>
