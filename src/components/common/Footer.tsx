@@ -1,10 +1,9 @@
 import { Links } from "./Header";
-import Link from "next/link";
-import styles from "@/styles/components/common/footer.module.scss"
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
-import { FiMapPin } from "react-icons/fi";
+import Link from "next/link";
+import styles from "@/styles/components/common/footer.module.scss"
 
 export function Footer() {
   return (
@@ -17,6 +16,13 @@ export function Footer() {
             <Link href="https://www.instagram.com/blackmonkeybrasil/" target="_blank" rel="external">
               <FaInstagram />
             </Link>
+            <Link href="https://github.com/Arthur-Candeia/" target="_blank" rel="external">
+              <FaGithub />
+            </Link>
+            <Link href="https://www.linkedin.com/in/arthur-candeia/" target="_blank" rel="external">
+              <FaLinkedinIn />
+            </Link>
+            
           </div>
         </div>
         <div className={styles.links}>
