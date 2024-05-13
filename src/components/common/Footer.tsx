@@ -13,7 +13,7 @@ export function Footer() {
           <h2>Arthur Candeia</h2>
           <p>Desenvolvimento que soluciona suas demandas digitais.</p>
           <div className={styles.social}>
-            <Link href="https://www.instagram.com/blackmonkeybrasil/" target="_blank" rel="external">
+            <Link href="https://www.instagram.com/arthur_candeia/" target="_blank" rel="external">
               <FaInstagram />
             </Link>
             <Link href="https://github.com/Arthur-Candeia/" target="_blank" rel="external">

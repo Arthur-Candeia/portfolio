@@ -14,8 +14,8 @@
 
 .start {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 
   .header {
@@ -23,6 +23,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 40px;
+    min-width: 500px;
+    padding: 3vw;
     color: $white;
     
     h1 {
@@ -44,9 +46,78 @@
       font-size: 1.3rem;
     }
   }
+
+  .profilePictureContainer {
+    margin: 0 auto;
+    width: 100%;
+    width: 30vw;
+    max-width: 450px;
+    height: 30vw;
+    max-height: 400px;
+    overflow: hidden;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.459), transparent);
+    border-radius: 80% 20% 32% 68% / 58% 22% 70% 42%;
+    border: 2px solid $color2;
+    box-shadow: 1px 2px 7px $white;
+  }
+
+  .profilePicture {
+    display: block;
+    width: 30vw;
+    height: 30vw;
+    margin: 20px auto 0px;
+    border-radius: 0px 0px 40px 40px;
+    filter: drop-shadow(0px 20px 40px rgba($color: $color2, $alpha: 0.3));
+    transition: all 1s ease-out;
+
+    &:hover {
+      filter: drop-shadow(0px 20px 40px rgba($color: $color2, $alpha: 0.8));
+    }
+  }
 }
 
-//animacoes do start
+@media only screen and (max-width: 850px) {
+  .start {
+    flex-direction: column;
+
+    .profilePictureContainer, .profilePicture {
+      width: 60vw;
+      height: 60vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home {
+    padding: 0px 10px;
+  }
+
+  .start {
+    .header {
+      width: 100%;
+      min-width: unset;
+      padding: 10px;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .start .header {
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+//animacoes do header
 @property --angle {
   syntax: '<angle>';
   initial-value: 90deg;
@@ -75,7 +146,6 @@
   font-size: 3vw;
 	margin: max(1rem, 3vw);
 	border: 0.35rem solid;
-	padding: 3vw;
 	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
 	animation: borderRotate var(--d) linear infinite forwards;
 }

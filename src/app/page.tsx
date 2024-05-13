@@ -13,7 +13,7 @@ export default function Home() {
             <LinksContainer />
           </div>
         </div>
-        <Image src="/photo.png" alt="Minha foto" className={styles.profilePicture} width={500} height={500}/>
+          <Image src="/photo.webp" alt="Minha foto" className={styles.profilePicture} width={500} height={500}/>
       </section>
     </main>
   );

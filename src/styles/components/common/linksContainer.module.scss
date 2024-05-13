@@ -50,13 +50,14 @@
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 330px) {
   .linksContainer {
     gap: 5px;
+    flex-direction: column;
+    width: 100%;
 
     a {
-      padding: 15px 0px;
-      font-size: 0.7rem;
+      width: 100%;
     }
   }
 }
