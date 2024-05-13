@@ -1,14 +1,14 @@
 @import '@/styles/common/colors.scss';
 
 .header {
-  position: relative;
+  position: fixed;
   z-index: 3;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   padding: 20px 40px;
-  background-color: rgba($color: #000000, $alpha: 0.8);
+  background-color: rgba($color: #1e1e1e, $alpha: 0.8);
   backdrop-filter: blur(10px);
   border-width: 0px 0px 2px 0px;
   border-style: solid;
@@ -39,8 +39,9 @@
         padding: 16px 30px;
         font-size: 1rem;
         font-weight: bold;
+        text-align: center;
         background-image: linear-gradient(45deg, $color1, $color3 90%);
-        border-radius: 40px;
+        border-radius: 5px;
         text-shadow: 1px 1px 1px rgba($color: $color4, $alpha: 0.3);
         animation: chatBackground 10s infinite linear;
 
@@ -59,20 +60,6 @@
 .name {
   font-size: 1.5rem;
   color: $color1;
-}
-
-@keyframes chatBackground {
-  0% {
-    background-size: 100% 200px;
-  }
-
-  50% {
-    background-size: 300% 200px;
-  }
-
-  100% {
-    background-size: 100% 200px;
-  }
 }
 
 @media only screen and (max-width: 950px) {

@@ -42,31 +42,6 @@
     p {
       font-size: 1.1rem;
     }
-
-    .linksContainer {
-      display: flex;
-      gap: 20px;
-      margin-top: 20px;
-      
-      a {
-        display: inline-block;
-        padding: 16px 30px;
-        font-size: 1rem;
-        font-weight: bold;
-        color: $white;
-        text-decoration: none;
-        color: $color4;
-        background-image: linear-gradient(45deg, #00753f, $color1 90%);
-        border-radius: 40px;
-        text-shadow: 1px 1px 1px rgba($color: $color4, $alpha: 0.3);
-        animation: chatBackground 10s infinite linear;
-
-        &:nth-child(2) {
-          color: $white;
-          background-image: linear-gradient(45deg, $color1, $color3 40%);
-        }
-      }
-    }
   }
 
   .notebook {

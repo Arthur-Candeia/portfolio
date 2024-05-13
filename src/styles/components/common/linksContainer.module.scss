@@ -1,0 +1,53 @@
+@import '@/styles/common/colors.scss';
+
+.linksContainer {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  
+  a {
+    display: inline-block;
+    min-width: 140px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: $color1;
+    background-image: transparent;
+    border: 2px solid $color1;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px rgba($color: $color4, $alpha: 0.3);
+    transition: all 0.2s ease-in;
+    animation: chatBackground 10s infinite linear;
+
+    &:hover {
+      color: $light-gray;
+      background-color: $color1;
+    }
+
+    &:nth-child(2) {
+      color: $white;
+      background-image: linear-gradient(45deg, $color1, $color3 40%);
+      border: 2px solid $color3;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+
+@keyframes chatBackground {
+  0% {
+    background-size: 100% 200px;
+  }
+
+  50% {
+    background-size: 300% 200px;
+  }
+
+  100% {
+    background-size: 100% 200px;
+  }
+}
