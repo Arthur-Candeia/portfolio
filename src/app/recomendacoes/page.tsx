@@ -13,7 +13,7 @@ export default function Page() {
             <LinksContainer />
           </div>
         </div>
-        <div className={styles.notebook} data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000">
+        <div className={styles.notebook} data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000">
           <Ratings />
         </div>
       </section>
