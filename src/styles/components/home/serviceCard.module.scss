@@ -1,0 +1,17 @@
+.serviceCard {
+  position: relative;
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 10px;
+  perspective: 1000px;
+
+  &:hover {
+    :global(.cardFront) {
+      transform: rotate3d(0, 1, 0, -180deg);
+    }
+
+    :global(.cardBack) {
+      transform: rotate3d(0, 1, 0, 0deg);
+    }
+  }
+}

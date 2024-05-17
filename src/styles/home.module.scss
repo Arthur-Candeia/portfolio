@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
   width: 100%;
   padding: 3% 30px 0px;
   background-color: $color4;
@@ -17,6 +17,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: $max-width;
 
   .header {
     display: flex;
@@ -64,7 +65,9 @@
   .profilePicture {
     display: block;
     width: 30vw;
+    max-width: 450px;
     height: 30vw;
+    max-height: 450px;
     margin: 20px auto 0px;
     border-radius: 0px 0px 40px 40px;
     filter: drop-shadow(0px 20px 40px rgba($color: $color2, $alpha: 0.3));
@@ -72,6 +75,56 @@
 
     &:hover {
       filter: drop-shadow(0px 20px 40px rgba($color: $color2, $alpha: 0.8));
+    }
+  }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 30px;
+  width: 100%;
+  max-width: $max-width;
+
+
+  .servicesInfos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 98%;
+    min-height: 100px;
+    color: $white;
+
+    div {
+      flex: 1.7;
+      max-width: 700px;
+
+      p {
+        font-weight: 500;
+        color: $color1;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        max-width: 500px;
+      }
+    }
+
+    span {
+      display: inline-block;
+      width: 5px;
+      height: auto;
+      min-height: 120px;
+      background-color: $color1;
+      border-radius: 5px;
+    }
+
+    p {
+      flex: 2;
+      line-height: 2;
+      max-width: 600px;
     }
   }
 }
@@ -85,10 +138,30 @@
       height: 60vw;
     }
   }
+
+  .services {
+    .servicesInfos {
+      flex-direction: column;
+
+      div {
+        h2 {
+          max-width: unset;
+        }
+      }
+
+      span {
+        display: none;
+      }
+
+      p {
+        max-width: unset;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  .home {
+  .home, .services {
     padding: 0px 10px;
   }
 
@@ -100,6 +173,15 @@
 
       h1 {
         font-size: 2rem;
+      }
+    }
+  }
+
+  .services {
+    .servicesInfos {
+      gap: 10px;
+      div h2 {
+        font-size: 1.7rem;
       }
     }
   }
