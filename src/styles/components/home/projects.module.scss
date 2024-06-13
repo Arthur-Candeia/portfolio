@@ -1,0 +1,141 @@
+@import '@/styles/common/colors.scss';
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  width: 100%;
+
+  .projectContainer {
+    flex: 1 0 380px;
+    max-width: 380px;
+    padding-bottom: 10px;
+
+    .imageContainer {
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.1s ease-in;
+      }
+    }
+
+    .infosContainer {
+      margin-top: 10px;
+      padding: 0px 5px;
+
+      .title {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+      }
+
+      .description {
+        font-size: 0.9rem;
+      }
+    }
+
+    .linksContainer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 10px;
+      padding: 0px 5px;
+      text-align: right;
+
+      a {
+        flex: 1;
+        display: inline-block;
+        padding: 12px 15px;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: $color1;
+        background-image: transparent;
+        border: 2px solid $color1;
+        border-radius: 5px;
+        text-shadow: 1px 1px 1px rgba($color: $color4, $alpha: 0.3);
+        transition: all 0.2s ease-in;
+        animation: chatBackground 10s infinite linear;
+    
+        &:hover {
+          color: $light-gray;
+          background-color: $color1;
+        }
+    
+        &:nth-child(2) {
+          color: $white;
+          border: 2px solid $color3;
+    
+          &:hover {
+            transform: translateY(-5px);
+          }
+        }
+      }
+    }
+  }
+
+  .projectContainer:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .projects {
+    .projectContainer {
+      flex: 1 0 250px;
+
+      .imageContainer img {
+        height: 150px;
+      }
+
+      .linksContainer {
+        a {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+//animacao produtos
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+.projects .projectContainer {
+  --d: 10000ms;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgba(168, 239, 255, 1);
+	--c2: transparent;
+
+	border: 0.35rem solid;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 450deg;
+	}
+}

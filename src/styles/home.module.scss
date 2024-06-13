@@ -139,6 +139,20 @@
   }
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 98%;
+  max-width: $max-width;
+  padding: 0px 60px;
+  color: $white;
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
 .budget {
   position: relative;
   width: 100%;
@@ -241,6 +255,10 @@
     }
   }
 
+  .projects {
+    padding: 0px;
+  }
+
   .budget > div {
     .budgetTitle {
       font-size: 2.1rem;
@@ -259,9 +277,7 @@
 
   .start {
     padding: 0px;
-  }
 
-  .start {
     .header {
       width: 100%;
       min-width: unset;
@@ -270,6 +286,12 @@
       h1 {
         font-size: 2rem;
       }
+    }
+  }
+
+  .projects {
+    h2 {
+      font-size: 1.5rem;
     }
   }
 

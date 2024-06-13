@@ -1,0 +1,98 @@
+[
+  {
+    "find_name": "bricar",
+    "name": "Bricar",
+    "short-description": "Marketplace para venda de peças de automóveis.",
+    "description": "SaaS (software as a service) nacional, com foco em vendas de peças de automóveis. Esse SaaS vem para bater de frente com grandes players do mercado de classificados online. Possui um desempenho fantástico, diversas páginas, integração com gateway de pagamento, criptografia, adequação à LGPD, dashboard de admin e uma API extremamente completa e bem desenvolvida.",
+    "link-external": "https://bricar.com.br",
+    "photos": [
+      "/projects/bricar/photo1.webp",
+      "/projects/bricar/photo2.webp",
+      "/projects/bricar/photo3.webp"
+    ],
+    "infos": {
+      "created_at": "Janeiro de 2024",
+      "frontend": {
+        "Linguagem": "Typescript",
+        "Framework": "Nextjs v13 (App Router)",
+        "Estilização": "SASS (.scss)"
+      },
+      "backend": {
+        "Motor": "NodeJS",
+        "Linguagem": "Typescript",
+        "Framework": "Express",
+        "Database": "MySQL",
+        "ORM": "Sequelize",
+        "Upload de arquivos": "Multer",
+        "Envio de e-mails": "Nodemailer"
+      },
+      "more-infos": {
+        "Hospedagem": "KVM4 VPS Hostinger",
+        "Autenticação": "Token JWT",
+        "Gateway de pagamentos": "Stripe"
+      }
+    }
+  },
+  {
+    "find_name": "black-monkey",
+    "name": "Black Monkey Pizzaria",
+    "short-description": "Landing Page para Pizzaria.",
+    "description": "Landing Page desenvolvida para uma pizzaria. Possuí cupons editáveis, promoções editáveis, painel administrativo, contador de visitas e contaddor de leads. Página com layout moderno e atrativo, animações e excelentes cores.",
+    "link-external": "https://blackmonkeybrasil.com.br/",
+    "photos": [
+      "/projects/black-monkey/photo1.webp",
+      "/projects/black-monkey/photo1.webp",
+      "/projects/black-monkey/photo1.webp"
+    ],
+    "infos": {
+      "created_at": "Maio de 2024",
+      "frontend": {
+        "Linguagem": "Typescript",
+        "Framework": "Nextjs v14 (App Router)",
+        "Estilização": "SASS (.scss)"
+      },
+      "backend": {
+        "Motor": "NodeJS",
+        "Linguagem": "Typescript",
+        "Database": "MySQL",
+        "ORM": "Prisma",
+        "Upload de arquivos": "Multer"
+      },
+      "more-infos": {
+        "Hospedagem": "KVM2 VPS Hostinger"
+      }
+    }
+  },
+  {
+    "find_name": "mega-clube-de-vantagens",
+    "name": "Mega Clube de Vantagens",
+    "short-description": "Plataforma de clube de vantagens personalizada.",
+    "description": "Plataforma de clube de vantagens personalizada, com foco em fidelizar clientes e associados. A plataforma oferece centenas de descontos exclusivos em mais de 10.000 estabelecimentos, como restaurantes, cinemas e muito mais. Possui uma interface elegante, diversas funcionalidades e conformidade com a LGPD. Conta com uma API dedicada e integração com gateway de pagamentos.",
+    "link-external": "https://megaclubevantagens.com.br/",
+    "photos": [
+      "/projects/mcv/photo1.webp",
+      "/projects/mcv/photo2.webp",
+      "/projects/mcv/photo3.webp"
+    ],
+    "infos": {
+      "created_at": "Fevereiro de 2024",
+      "frontend": {
+        "Linguagem": "Typescript",
+        "Framework": "Nextjs v14 (App Router)",
+        "Estilização": "SASS (.scss)"
+      },
+      "backend": {
+        "Motor": "NodeJS",
+        "Linguagem": "Typescript",
+        "Framework": "Fastify",
+        "Database": "MySQL",
+        "ORM": "Prisma"
+      },
+      "more-infos": {
+        "Hospedagem": "KVM2 VPS Hostinger",
+        "Autenticação": "Token JWT",
+        "Gateway de pagamentos": "Stripe"
+      }
+    }
+  }
+]

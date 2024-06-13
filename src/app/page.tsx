@@ -9,6 +9,7 @@ import { PiDesktopTower } from "react-icons/pi";
 import Image from "next/image";
 import styles from "@/styles/home.module.scss"
 import Link from "next/link";
+import { Projects } from "@/components/home/Projects";
 
 export default function Home() {
   return (
@@ -64,6 +65,11 @@ export default function Home() {
             <CardBack title="Softwares Desktop" imgUrl="./services-background/desktop.webp"/>
           </ServiceCard>
         </div>
+      </section>
+
+      <section className={styles.projects}>
+        <h2>Projetos em destaque</h2>
+        <Projects />
       </section>
 
       <section className={styles.budget}>
