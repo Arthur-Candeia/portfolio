@@ -34,33 +34,33 @@ export default function Home() {
         </div>
 
         <div className={styles.servicesCardsContainer}>
-          <ServiceCard>
+          <ServiceCard link="/servicos/aplicativos">
             <CardFront title="Aplicativos" description="Seu aplicativo da maneira ideal que você sempre sonhou.">
               <FiSmartphone style={{fill: 'transparent', color: '#00FF88'}} />
             </CardFront>
-            <CardBack title="Aplicativos" imgUrl="" link=""/>
+            <CardBack title="Aplicativos" imgUrl="./services-background/mobile.webp"/>
           </ServiceCard>
 
-          <ServiceCard>
+          <ServiceCard link="/servicos/criacao-de-sites">
             <CardFront title="Criação de Sites" description="Divulgue seus produtos e serviços e aumente seus ganhos.">
               <FaDesktop />
             </CardFront>
-            <CardBack title="Criação de Sites" imgUrl="" link=""/>
+            <CardBack title="Criação de Sites" imgUrl="./services-background/site.webp"/>
           </ServiceCard>
 
-          <ServiceCard>
+          <ServiceCard link="/servicos/sistemas-web">
             <CardFront title="Sistemas Web" description="Sistema desenvolvido para levar sua produtividade a outro nível.">
               <MdTab />
             </CardFront>
-            <CardBack title="Sistemas Web" imgUrl="" link=""/>
+            <CardBack title="Sistemas Web" imgUrl="./services-background/web.webp"/>
           </ServiceCard>
 
 
-          <ServiceCard>
+          <ServiceCard link="/servicos/softwares-desktop">
             <CardFront title="Softwares Desktop" description="Programa para PC desenvolvido sob medida para você.">
               <PiDesktopTower />
             </CardFront>
-            <CardBack title="Softwares Desktop" imgUrl="" link=""/>
+            <CardBack title="Softwares Desktop" imgUrl="./services-background/desktop.webp"/>
           </ServiceCard>
         </div>
       </section>
