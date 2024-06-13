@@ -8,6 +8,7 @@ import { MdTab } from "react-icons/md";
 import { PiDesktopTower } from "react-icons/pi";
 import Image from "next/image";
 import styles from "@/styles/home.module.scss"
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -64,6 +65,18 @@ export default function Home() {
           </ServiceCard>
         </div>
       </section>
+
+      <section className={styles.budget}>
+        <video preload="none" autoPlay muted loop>
+          <source src="/background-video.mp4" type="video/mp4" />
+        </video>
+        <div>
+          <p className={styles.budgetTitle}>Quero um orçamento</p>
+          <p className={styles.budgetDescription}>Desenvolvimento que soluciona suas demandas digitais.</p>
+          <Link href="/orcamentos" target="_self" rel="next">Quero um orçamento</Link>
+        </div>
+      </section>
+
     </main>
   );
 }
