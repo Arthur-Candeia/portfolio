@@ -15,7 +15,7 @@ export function Projects() {
             <p className={styles.title}>{element.name}</p>
           </div>
           <div className={styles.linksContainer}>
-            <Link href={`/projetos/${element.find_name}`} target="_self" rel="next">Saiba mais</Link>
+            <Link href={`/projetos/${element.find_id}`} target="_self" rel="next">Saiba mais</Link>
             <Link href={`${element["link-external"]}`} target="_blank" rel="external">Visite 🔗</Link>
           </div>
         </div>
