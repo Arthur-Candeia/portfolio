@@ -9,9 +9,11 @@ interface Props {
 export function CardFront({children, title, description}: Props) {
   return (
     <div className={`${styles.cardFront} cardFront`}>
-      {children}
-      <p>{title}</p>
-      <p>{description}</p>
+      <div className={styles.titleContainer}>
+        {children}
+        <p className={styles.title}>{title}</p>
+      </div>
+      <p className={styles.description}>{description}</p>
     </div>
   )
 }

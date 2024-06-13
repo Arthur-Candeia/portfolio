@@ -2,9 +2,12 @@ import { LinksContainer } from "@/components/common/LinksContainer";
 import { CardBack } from "@/components/home/CardBack";
 import { CardFront } from "@/components/home/CardFront";
 import { ServiceCard } from "@/components/home/ServiceCard";
-import { ImMobile } from "react-icons/im";
-import styles from "@/styles/home.module.scss"
+import { FiSmartphone } from "react-icons/fi";
+import { FaDesktop } from "react-icons/fa";
+import { MdTab } from "react-icons/md";
+import { PiDesktopTower } from "react-icons/pi";
 import Image from "next/image";
+import styles from "@/styles/home.module.scss"
 
 export default function Home() {
   return (
@@ -32,11 +35,32 @@ export default function Home() {
 
         <div className={styles.servicesCardsContainer}>
           <ServiceCard>
-            <CardFront title="Aplicativos" description="Seu aplicativo da maneira que você sempre sonhou.">
-              <ImMobile />
+            <CardFront title="Aplicativos" description="Seu aplicativo da maneira ideal que você sempre sonhou.">
+              <FiSmartphone style={{fill: 'transparent', color: '#00FF88'}} />
             </CardFront>
-
             <CardBack title="Aplicativos" imgUrl="" link=""/>
+          </ServiceCard>
+
+          <ServiceCard>
+            <CardFront title="Criação de Sites" description="Divulgue seus produtos e serviços e aumente seus ganhos.">
+              <FaDesktop />
+            </CardFront>
+            <CardBack title="Criação de Sites" imgUrl="" link=""/>
+          </ServiceCard>
+
+          <ServiceCard>
+            <CardFront title="Sistemas Web" description="Sistema desenvolvido para levar sua produtividade a outro nível.">
+              <MdTab />
+            </CardFront>
+            <CardBack title="Sistemas Web" imgUrl="" link=""/>
+          </ServiceCard>
+
+
+          <ServiceCard>
+            <CardFront title="Softwares Desktop" description="Programa para PC desenvolvido sob medida para você.">
+              <PiDesktopTower />
+            </CardFront>
+            <CardBack title="Softwares Desktop" imgUrl="" link=""/>
           </ServiceCard>
         </div>
       </section>

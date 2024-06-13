@@ -1,12 +1,42 @@
+@import '@/styles/common/colors.scss';
+
 .cardFront {
   position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 25px;
   width: 100%;
   height: 100%;
-  background-color: red;
+  padding: 0px 20px;
+  color: $white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba($color: #000000, $alpha: 0.3);
   transition: all 0.5s ease-in;
   transform-style: preserve-3d;
   backface-visibility: hidden;
+
+  .titleContainer {
+    display: grid;
+    place-items: center;
+    gap: 5px;
+
+    svg {
+      width: 80px;
+      height: 80px;
+      fill: $color1;
+    }
+
+    .title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .description {
+    text-align: center;
+    color: $light-gray;
+  }
 }
