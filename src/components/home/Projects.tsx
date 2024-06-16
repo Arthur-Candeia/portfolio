@@ -10,6 +10,9 @@ export function Projects() {
         <div key={index} className={styles.projectContainer}>
           <div className={styles.imageContainer}>
             <Image src={element.photos[0]} alt={`Imagem projeto ${element.name}`} width={400} height={180} />
+            <div className={styles.shortDescription}>
+              <p>{element["short-description"]}</p>
+            </div>
           </div>
           <div className={styles.infosContainer}>
             <p className={styles.title}>{element.name}</p>
