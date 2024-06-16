@@ -10,14 +10,14 @@
       "/projects/bricar/photo2.webp",
       "/projects/bricar/photo3.webp"
     ],
+    "created_at": "Janeiro de 2024",
     "infos": {
-      "created_at": "Janeiro de 2024",
-      "frontend": {
+      "Frontend": {
         "Linguagem": "Typescript",
         "Framework": "Nextjs v13 (App Router)",
         "Estilização": "SASS (.scss)"
       },
-      "backend": {
+      "Backend": {
         "Motor": "NodeJS",
         "Linguagem": "Typescript",
         "Framework": "Express",
@@ -26,7 +26,7 @@
         "Upload de arquivos": "Multer",
         "Envio de e-mails": "Nodemailer"
       },
-      "more-infos": {
+      "Informações Adicionais": {
         "Hospedagem": "KVM4 VPS Hostinger",
         "Autenticação": "Token JWT",
         "Gateway de pagamentos": "Stripe"
@@ -44,21 +44,21 @@
       "/projects/black-monkey/photo1.webp",
       "/projects/black-monkey/photo1.webp"
     ],
+    "created_at": "Maio de 2024",
     "infos": {
-      "created_at": "Maio de 2024",
-      "frontend": {
+      "Frontend": {
         "Linguagem": "Typescript",
         "Framework": "Nextjs v14 (App Router)",
         "Estilização": "SASS (.scss)"
       },
-      "backend": {
+      "Backend": {
         "Motor": "NodeJS",
         "Linguagem": "Typescript",
         "Database": "MySQL",
         "ORM": "Prisma",
         "Upload de arquivos": "Multer"
       },
-      "more-infos": {
+      "Informações Adicionais": {
         "Hospedagem": "KVM2 VPS Hostinger"
       }
     }
@@ -74,21 +74,21 @@
       "/projects/mcv/photo2.webp",
       "/projects/mcv/photo3.webp"
     ],
+    "created_at": "Fevereiro de 2024",
     "infos": {
-      "created_at": "Fevereiro de 2024",
-      "frontend": {
+      "Frontend": {
         "Linguagem": "Typescript",
         "Framework": "Nextjs v14 (App Router)",
         "Estilização": "SASS (.scss)"
       },
-      "backend": {
+      "Backend": {
         "Motor": "NodeJS",
         "Linguagem": "Typescript",
         "Framework": "Fastify",
         "Database": "MySQL",
         "ORM": "Prisma"
       },
-      "more-infos": {
+      "Informações Adicionais": {
         "Hospedagem": "KVM2 VPS Hostinger",
         "Autenticação": "Token JWT",
         "Gateway de pagamentos": "Stripe"
