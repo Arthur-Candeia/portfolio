@@ -29,7 +29,8 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  height: 360px;
+  justify-content: space-between;
   padding: 10px 20px;
   color: $white;
 
@@ -67,14 +68,16 @@
 .infosSection {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   padding: 0px 20px;
   color: $white;
 
   .infosContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 20px;
 
     .infos {
 
@@ -83,6 +86,38 @@
         line-height: 2;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .contentContainer {
+    flex-direction: column;
+
+    .photosSlide {
+      flex: unset;
+      width: 100%;
+
+      .photoContainer {
+        img {
+          height: 45vw;
+        }
+      }
+    }
+  }
+
+  .content {
+    gap: 30px;
+    height: unset;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .contentContainer {
+    padding: 0px 5px;
+  }
+
+  .content {
+    padding: 10px 5px;
   }
 }
 
