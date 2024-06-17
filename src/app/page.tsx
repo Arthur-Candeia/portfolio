@@ -6,10 +6,10 @@ import { FiSmartphone } from "react-icons/fi";
 import { FaDesktop } from "react-icons/fa";
 import { MdTab } from "react-icons/md";
 import { PiDesktopTower } from "react-icons/pi";
+import { Projects } from "@/components/home/Projects";
 import Image from "next/image";
 import styles from "@/styles/home.module.scss"
-import Link from "next/link";
-import { Projects } from "@/components/home/Projects";
+import { Budget } from "@/components/common/Budget";
 
 export default function Home() {
   return (
@@ -72,17 +72,7 @@ export default function Home() {
         <Projects />
       </section>
 
-      <section className={styles.budget}>
-        <video preload="none" autoPlay muted loop>
-          <source src="/background-video.mp4" type="video/mp4" />
-        </video>
-        <div>
-          <p className={styles.budgetTitle}>Quero um orçamento</p>
-          <p className={styles.budgetDescription}>Desenvolvimento que soluciona suas demandas digitais.</p>
-          <Link href="/orcamentos" target="_self" rel="next">Quero um orçamento</Link>
-        </div>
-      </section>
-
+      <Budget />
     </main>
   );
 }

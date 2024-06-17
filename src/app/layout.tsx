@@ -9,10 +9,7 @@ const font2 = Frank_Ruhl_Libre({weight: ['400', '500', '600', '700'], subsets: [
 
 export const metadata: Metadata = {
   title: "Arthur Candeia",
-  description: "Tire seu projeto do papel agora! Com Arthur Candeia você tem o desenvolvimento que soluciona suas demandas digitais! Crie sites, aplicativos e programas para potencializar seus negócios.",
-  icons: {
-    icon: './favicon.png'
-  }
+  description: "Tire seu projeto do papel agora! Com Arthur Candeia você tem o desenvolvimento que soluciona suas demandas digitais! Crie sites, aplicativos e programas para potencializar seus negócios."
 };
 
 export default function RootLayout({

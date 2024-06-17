@@ -67,7 +67,6 @@
         border-radius: 5px;
         text-shadow: 1px 1px 1px rgba($color: $color4, $alpha: 0.3);
         transition: all 0.2s ease-in;
-        animation: chatBackground 10s infinite linear;
     
         &:hover {
           color: $light-gray;
