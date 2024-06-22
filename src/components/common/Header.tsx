@@ -10,7 +10,7 @@ export function Header() {
     <header className={styles.header}>
       <Link href="/" target="_self" rel="prev" className={styles.name}>Arthur Candeia</Link>
       <nav className={styles.navDesktop}>
-        <Links />
+        <Links showServices/>
         <Link href="https://api.whatsapp.com/send?phone=5527998642163&text=Olá!%20Tenho%20um%20projeto!" target="_blank" rel="external" className={styles.chat}>
           Vamos conversar {'>'}
         </Link>
@@ -23,7 +23,7 @@ export function Header() {
   )
 }
 
-export function Links() {
+export function Links({showServices = false}: {showServices?: boolean}) {
   const pathname = usePathname()
   const links = [
     {href: '/orcamentos', name: 'Orçamentos'},
@@ -54,7 +54,7 @@ export function Links() {
             {name}
           </Link>
           {
-            href === '/servicos' ?
+            href === '/servicos' && showServices ?
             <div className={styles.servicesType}>
               <Link href="/servicos/aplicativos" target="_self" rel="next">Aplicativos</Link>
               <Link href="/servicos/criacao-de-sites" target="_self" rel="next">Criação de Sites</Link>

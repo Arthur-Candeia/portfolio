@@ -1,0 +1,102 @@
+@import '@/styles/common/colors.scss';
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 0px 60px;
+  width: 100%;
+  max-width: $max-width;
+
+  .servicesInfos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 98%;
+    min-height: 100px;
+    color: $white;
+
+    div {
+      flex: 1.7;
+      max-width: 700px;
+
+      p {
+        font-weight: 500;
+        color: $color1;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        max-width: 500px;
+      }
+    }
+
+    span {
+      display: inline-block;
+      width: 5px;
+      height: auto;
+      min-height: 120px;
+      background-color: $color1;
+      border-radius: 5px;
+    }
+
+    p {
+      flex: 2;
+      line-height: 2;
+      max-width: 600px;
+    }
+  }
+
+  .servicesCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .services {
+    .servicesInfos {
+      flex-direction: column;
+
+      div {
+        h2 {
+          max-width: unset;
+        }
+      }
+
+      span {
+        display: none;
+      }
+
+      p {
+        max-width: unset;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .services {
+    padding: 0px 10px;
+
+    .servicesCardsContainer {
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .services {
+    .servicesInfos {
+      gap: 10px;
+      div h2 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
