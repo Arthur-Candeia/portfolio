@@ -12,7 +12,7 @@ import 'swiper/css'
 
 
 export default function Page({params: {id}}: {params: {id: string}}) {
-  const project = projects[+id]
+  const project = projects.find((element) => element.find_id === id)
   if (!project) return redirect('/')
   const { photos, name, description, infos, created_at } = project
 
@@ -29,7 +29,7 @@ export default function Page({params: {id}}: {params: {id: string}}) {
         >
           {photos.map((element, index) => (
             <SwiperSlide key={index} className={styles.photoContainer}>
-              <Image src={element} className={styles.photo} alt='Aspas icon' width={1920} height={1080} />
+              <Image src={element} className={styles.photo} alt='Photo' width={1920} height={1080} quality={100} />
             </SwiperSlide>
           ))}
         </Swiper>
