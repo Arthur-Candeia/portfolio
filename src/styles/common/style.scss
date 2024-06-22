@@ -124,6 +124,12 @@ body::-webkit-scrollbar-track {
 }
 
 @media only screen and (max-width: 715px) {
+  body {
+    main {
+      padding-top: 80px !important;
+    }
+  }
+
   .menu-burguer {
     display: flex;
   }
@@ -137,7 +143,7 @@ body::-webkit-scrollbar-track {
 
 .mobile-nav {
   position: absolute;
-  top: 69px;
+  top: 67px;
   right: 0px;
   display: none;
   flex-direction: column;

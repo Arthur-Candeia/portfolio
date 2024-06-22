@@ -33,7 +33,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   height: 100%;
   min-height: 360px;
   justify-content: space-between;
@@ -88,16 +88,17 @@
     .infos {
 
       ul {
-        padding-left: 20px;
+        padding-left: 15px;
         line-height: 2;
       }
     }
   }
 }
 
-@media only screen and (max-width: 715px) {
+@media only screen and (max-width: 850px) {
   .contentContainer {
     flex-direction: column;
+    gap: 10px;
 
     .photosSlide {
       flex: unset;
@@ -112,18 +113,15 @@
   }
 
   .content {
-    gap: 30px;
+    gap: 15px;
     height: unset;
+    padding: 10px;
   }
 }
 
 @media only screen and (max-width: 320px) {
   .contentContainer {
     padding: 0px 5px;
-  }
-
-  .content {
-    padding: 10px 5px;
   }
 }
 

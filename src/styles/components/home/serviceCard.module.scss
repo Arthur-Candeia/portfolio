@@ -17,3 +17,10 @@
     }
   }
 }
+
+@media only screen and (max-width: 715px) {
+  .serviceCard {
+    width: 100%;
+    max-width: 400px;
+  }
+}

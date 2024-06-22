@@ -22,6 +22,50 @@
     display: flex;
     align-items: center;
     gap: 30px;
+
+    .linkContainer {
+      &:has(.servicesType) {
+        position: relative;
+        &:hover .servicesType {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    .servicesType {
+      position: absolute;
+      top: 60px;
+      left: 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-width: 200px;
+      padding: 10px 20px;
+      visibility: hidden;
+      opacity: 0;
+      background-color: rgba($color: #000000, $alpha: 0.70);
+      border-radius: 0px 0px 5px 5px;
+      transition: visibility 2s 0s ease-in, opacity 0.2s ease-in;
+
+      //espaco entre o link e o servicesType
+      &::before {
+        content: "";
+        position: absolute;
+        top: -40px;
+        left: 0px;
+        display: inline-block;
+        width: 200px;
+        height: 40px;
+        z-index: 4;
+        background-color: transparent;
+      }
+
+      &:hover {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
   }
 
   nav {
@@ -29,7 +73,7 @@
       font-size: 0.9rem;
       text-transform: uppercase;
       color: $white;
-      transition: all 0.2s ease-in;
+      transition: color 0.2s ease-in;
 
       &.active {
         color: $color1;
@@ -69,6 +113,10 @@
     .navDesktop {
       gap: 10px;
 
+      .servicesType {
+        top: 53px;
+      }
+
       a {
         font-size: 0.8rem;
 
@@ -91,6 +139,10 @@
     justify-content: space-between;
 
     .navDesktop {
+      display: none;
+    }
+
+    .servicesType {
       display: none;
     }
   }

@@ -22,7 +22,7 @@ export default function Home() {
             <LinksContainer />
           </div>
         </div>
-        <Image src="/photo.webp" alt="Minha foto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className={styles.profilePicture} width={500} height={500} />
+        <Image src="/photo.webp" alt="Minha foto" className={styles.profilePicture} width={500} height={500} />
       </section>
 
       <section className={styles.services}>

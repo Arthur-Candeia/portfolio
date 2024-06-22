@@ -11,9 +11,9 @@ export function Header() {
       <Link href="/" target="_self" rel="prev" className={styles.name}>Arthur Candeia</Link>
       <nav className={styles.navDesktop}>
         <Links />
-      <Link href="https://api.whatsapp.com/send?phone=5527998642163&text=Olá!%20Tenho%20um%20projeto!" target="_blank" rel="external" className={styles.chat}>
-        Vamos conversar {'>'}
-      </Link>
+        <Link href="https://api.whatsapp.com/send?phone=5527998642163&text=Olá!%20Tenho%20um%20projeto!" target="_blank" rel="external" className={styles.chat}>
+          Vamos conversar {'>'}
+        </Link>
       </nav>
       <BurgerMenu />
       <nav className="mobile-nav">
@@ -43,15 +43,27 @@ export function Links() {
         Início
       </Link>
       {links.map(({href, name}, index) => (
-        <Link
-          href={href}
-          key={index}
-          target="_self" rel="next"
-          className={pathname.includes(href) ? styles.active : ''}
-          onClick={handleClose}
-        >
-          {name}
-        </Link>
+        <div className={styles.linkContainer}>
+          <Link
+            href={href}
+            key={index}
+            target="_self" rel="next"
+            className={`${pathname.includes(href) ? styles.active : ''}`}
+            onClick={handleClose}
+          >
+            {name}
+          </Link>
+          {
+            href === '/servicos' ?
+            <div className={styles.servicesType}>
+              <Link href="/servicos/aplicativos" target="_self" rel="next">Aplicativos</Link>
+              <Link href="/servicos/criacao-de-sites" target="_self" rel="next">Criação de Sites</Link>
+              <Link href="/servicos/sistemas-web" target="_self" rel="next">Sistemas Web</Link>
+              <Link href="/servicos/softwares-desktop" target="_self" rel="next">Softwares Desktop</Link>
+            </div>
+            : ''
+          }
+        </div>
       ))}
     </>
   )
