@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { DM_Sans, Frank_Ruhl_Libre } from "next/font/google";
+import { DM_Sans, Frank_Ruhl_Libre, Roboto_Mono } from "next/font/google";
 import { Header } from "@/components/common/Header";
 import { Footer } from "@/components/common/Footer";
 import '@/styles/common/style.scss'
 
 const font = DM_Sans({weight: ['200', '400', '500', '600', '800'], subsets: ['latin'], variable: '--font-dm'})
 const font2 = Frank_Ruhl_Libre({weight: ['400', '500', '600', '700'], subsets: ['latin'], variable: '--font-frank'})
+const font3 = Roboto_Mono({weight: ['700'], subsets: ['latin'], variable: '--font-roboto'})
 
 export const metadata: Metadata = {
   title: "Arthur Candeia",
@@ -22,7 +23,7 @@ export default function RootLayout({
       <head>
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </head>
-      <body className={`${font.variable} ${font2.variable}`}>
+      <body className={`${font.variable} ${font2.variable} ${font3.variable}`}>
         <Header />
         {children}
         <Footer />

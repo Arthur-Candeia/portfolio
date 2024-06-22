@@ -1,0 +1,52 @@
+@import '@/styles/common/colors.scss';
+
+.servicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  padding: 3% 0px;
+  min-height: 100%;
+  background-color: #2e2e2e;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: $max-width;
+  padding: 0px 60px;
+
+  .info {
+    width: calc(98% - 15px);
+    padding: 10px 20px;
+    user-select: none;
+    border: 2px solid $color1;
+    border-radius: 5px;
+    box-shadow: 15px 15px 0px 5px #3DCC7499;
+  
+    &:hover {
+      transform: scale(1.03) !important;
+    }
+  
+    .infoTitle {
+      margin-bottom: 20px;
+      font: normal bold 1.8rem $font1;
+      color: $color2;
+    }
+  
+    p {
+      font: normal normal 1.1rem $font1;
+      line-height: 1.7;
+      text-align: justify;
+      word-wrap: break-word;
+      color: $light-gray;
+    }
+  
+    span {
+      color: $color2;
+    }
+  }
+
+}
