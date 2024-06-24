@@ -2,12 +2,14 @@
 
 .budget {
   position: relative;
+  display: flex;
   width: 100%;
+  min-height: 300px;
+  max-height: 400px;
+
 
   video {
     width: 100%;
-    min-height: 300px;
-    max-height: 350px;
     object-fit: cover;
   }
 

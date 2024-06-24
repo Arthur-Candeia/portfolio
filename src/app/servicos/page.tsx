@@ -9,13 +9,13 @@ export default function Page() {
       <Services />
       <section className={styles.infoContainer}>
         <div className={styles.info}>
-          <p className={styles.infoTitle}>O que faço?</p>
-          <p> 
+          <p className={styles.title}>O que faço?</p>
+          <p className={styles.content}> 
             Por meio do desenvolvimento de software, <span>realizo projetos que ultrapassem as expectativas dos clientes.</span> Seu projeto será desenvolvido com imenso zelo e habilidade, de forma a garantir <span>segurança, eficiência e qualidade</span> para os usuários. Deseja aprimorar seu negócio local com uma plataforma de vendas? Perfeito, <span>seu comércio em outro nível!</span> Deseja um sistema para sua empresa com mais de 1000 funcionários? Fantástico, a gestão de sua empresa será única!
           </p>
         </div>
-
       </section>
+      <p className={styles.title} style={{width: '98%', marginBottom: '-20px'}}>Soluções digitais para você</p>
       <Grid />
       <Budget />
     </main>

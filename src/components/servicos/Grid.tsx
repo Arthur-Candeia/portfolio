@@ -8,7 +8,7 @@ import styles from "@/styles/components/servicos/grid.module.scss"
 
 export function Grid() {
   return (
-    <ul className={styles.presentationContent}>
+    <ul className={styles.gridContainer}>
       <li>
         <div><FiMonitor /></div>
         <p><span>Serviços</span> <br />Desenvolvedor de softwares, aplicativos, sistemas web (SPA), API's, interfaces e sites.</p>
@@ -27,7 +27,7 @@ export function Grid() {
       </li>
       <li>
         <div><TbCloudUp /></div>
-        <p><span>Hospedagem</span> <br />Hospedagens excelentes para garantir segurança, desempenho e confiabilidade à sua aplicação.</p>
+        <p><span>Hospedagem</span> <br />Hospedagens excelentes para garantir segurança e desempenho à sua aplicação.</p>
       </li>
       <li>
         <div><IoDiamondOutline /></div>

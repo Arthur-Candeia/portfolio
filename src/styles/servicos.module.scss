@@ -4,39 +4,45 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
   width: 100%;
-  padding: 3% 0px;
   min-height: 100%;
   background-color: #2e2e2e;
+}
+
+.title {
+  padding: 0px 60px;
+  font: normal bold 1.8rem $font1;
+  color: $color2;
 }
 
 .infoContainer {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 98%;
   max-width: $max-width;
+  margin-bottom: 20px;
   padding: 0px 60px;
 
   .info {
-    width: calc(98% - 15px);
+    width: calc(100%);
     padding: 10px 20px;
     user-select: none;
     border: 2px solid $color1;
     border-radius: 5px;
     box-shadow: 15px 15px 0px 5px #3DCC7499;
+    transition: all 0.2s ease-in;
   
     &:hover {
       transform: scale(1.03) !important;
     }
   
-    .infoTitle {
+    .title {
       margin-bottom: 20px;
-      font: normal bold 1.8rem $font1;
-      color: $color2;
+      padding: unset;
     }
-  
-    p {
+
+    .content {
       font: normal normal 1.1rem $font1;
       line-height: 1.7;
       text-align: justify;
@@ -48,5 +54,13 @@
       color: $color2;
     }
   }
+}
 
+@media only screen and (max-width: 715px) {
+
+  .infoContainer {
+    &, .title {
+      padding: 0px 10px;
+    }
+  }
 }
