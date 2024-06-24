@@ -5,7 +5,7 @@ export function Budget() {
   return (
     <section className={styles.budget}>
       <video preload="none" autoPlay muted loop>
-        <source src="/background-video.mp4" type="video/mp4" />
+        <source src="/videos/budget.mp4" type="video/mp4" />
       </video>
       <div>
         <p className={styles.budgetTitle}>Quero um orçamento</p>

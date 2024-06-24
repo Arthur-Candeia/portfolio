@@ -1,0 +1,21 @@
+[
+  {
+    "type": "",
+    "videoUrl": "",
+    "name": "",
+    "cards": [
+      {
+        "title": "Disponíveis para iOS e Android",
+        "description": "Seu aplicativo estará publicado nas lojas principais lojas do mercado."
+      },
+      {
+        "title": "Notificações Push",
+        "description": "Seu usuários poderão receber notificações com avisos ou informações."
+      },
+      {
+        "title": "Vendas no App",
+        "description": "Disponibilize produtos dentro do seu aplicativo de forma segura, aumentando as vendas do seu negócio."
+      }
+    ]
+  }
+]
