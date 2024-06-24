@@ -1,4 +1,5 @@
 @import '@/styles/common/colors.scss';
+@import './components/common/budget.module.scss';
 
 .servicos {
   display: flex;
@@ -53,6 +54,35 @@
     span {
       color: $color2;
     }
+  }
+}
+
+//Página de serviço individual
+.service {
+  padding-top: 0px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .videoContainer {
+    @extend .budget;
+    height: 70vh !important;
+    max-height: unset;
+
+    .serviceTitle {
+      @extend .budgetTitle;
+    }
+
+    .serviceDescription {
+      @extend .budgetDescription;
+    }
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, min(310px, 100vw));
+    justify-content: center;
+    gap: 20px;
   }
 }
 

@@ -1,11 +1,12 @@
 [
   {
-    "type": "",
-    "videoUrl": "",
-    "name": "",
+    "find_name": "aplicativos",
+    "videoUrl": "/videos/app.mp4",
+    "title": "Aplicativos Mobile",
+    "description": "Tenha seu próprio aplicativo e tire seu projeto do papel!",
     "cards": [
       {
-        "title": "Disponíveis para iOS e Android",
+        "title": "Android e IOS",
         "description": "Seu aplicativo estará publicado nas lojas principais lojas do mercado."
       },
       {
@@ -15,6 +16,26 @@
       {
         "title": "Vendas no App",
         "description": "Disponibilize produtos dentro do seu aplicativo de forma segura, aumentando as vendas do seu negócio."
+      },
+      {
+        "title": "GPS e Mapas",
+        "description": "Geolocalização e GPS permitem localizar usuários, serviços ou profissionais utilizando mapas em seu aplicativo."
+      },
+      {
+        "title": "Painel de Administração",
+        "description": "Gerencie os conteúdos do seu app, como clientes, informações dentro do seu painel."
+      },
+      {
+        "title": "Chat em Tempo Real",
+        "description": "Funcionalidade de chat em tempo real para facilitar a comunicação entre usuários, promovendo interação imediata."
+      },
+      {
+        "title": "Dados em Nuvem",
+        "description": "Armazenamento em nuvem permite que os usuários salvem dados e arquivos online, garantindo acesso a partir de qualquer dispositivo conectado à internet."
+      },
+      {
+        "title": "Câmera Integrada",
+        "description": "Permite o uso da câmera para captura de fotos e vídeos diretamente no aplicativo, enriquecendo a experiência do usuário."
       }
     ]
   }
