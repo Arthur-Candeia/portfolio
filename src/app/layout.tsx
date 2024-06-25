@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans, Frank_Ruhl_Libre, Roboto_Mono } from "next/font/google";
 import { Header } from "@/components/common/Header";
 import { Footer } from "@/components/common/Footer";
+import { WppIcon } from "@/components/common/WppIcon";
 import '@/styles/common/style.scss'
 
 const font = DM_Sans({weight: ['200', '400', '500', '600', '800'], subsets: ['latin'], variable: '--font-dm'})
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={`${font.variable} ${font2.variable} ${font3.variable}`}>
         <Header />
         {children}
+        <WppIcon />
         <Footer />
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>AOS.init()</script>

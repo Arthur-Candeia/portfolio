@@ -16,7 +16,7 @@ export function Services() {
           <h2>Que tal começar o seu projeto hoje?</h2>
         </div>
         <span></span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos nam corporis omnis quisquam! Accusamus, repudiandae dicta. Mollitia, enim voluptatibtiis eveniet vero?</p>
+        <p>Transformando seus sonhos em soluções digitais perfeitas para você! Tenha suas demandas solucionadas através de um aplicativo, site ou sistema. Tudo pensado para te atender da melhor forma possível!</p>
       </div>
 
       <div className={styles.servicesCardsContainer}>

@@ -1,5 +1,5 @@
 import { Links } from "./Header";
-import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
 import Link from "next/link";
@@ -22,7 +22,9 @@ export function Footer() {
             <Link href="https://www.linkedin.com/in/arthur-candeia/" target="_blank" rel="external">
               <FaLinkedinIn />
             </Link>
-            
+            <Link href="https://api.whatsapp.com/send?phone=5527998642163&text=Olá!%20Tenho%20um%20projeto!" target="_blank" rel="external">
+              <FaWhatsapp />
+            </Link>
           </div>
         </div>
         <div className={styles.links}>
