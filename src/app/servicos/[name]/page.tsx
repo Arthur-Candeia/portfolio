@@ -1,39 +1,18 @@
 import { redirect } from 'next/navigation'
 import { Card } from '@/components/servicos/Card'
 import { Budget } from '@/components/common/Budget'
+import { serviceType } from '@/schemas/serviceType'
 import Link from 'next/link'
 import services from '@/../services.json'
 import styles from "@/styles/servicos.module.scss"
+import { serviceIcons } from '@/utilities/serviceIcons.utility'
 
-
-type nameType = 'aplicativos' | 'criacao-de-sites' | 'sistemas-web' | 'softwares-desktop'
-
-export default function Page({params: {name}}: {params: {name: nameType}}) {
+export default function Page({params: {name}}: {params: {name: serviceType}}) {
   const service = services.find((element) => element.find_name === name)
-  if (!service) redirect('/')
+  const icons: any[] = serviceIcons(name)
+  if (!service || icons.length < 8) redirect('/')
   const {videoUrl, title, description, cards} = service
-  const icons: any[] = []
-
-  switch (name) {
-    case 'aplicativos':
-      const {FiSmartphone, FiCamera} = require('react-icons/fi')
-      const {MdOutlineNotificationsActive} = require('react-icons/md')
-      const {FaRegCreditCard} = require('react-icons/fa')
-      const { RiMapPinLine, RiAdminLine } =  require("react-icons/ri");
-      const {BsChatLeftDots} = require('react-icons/bs')
-      const {TbCloudUp} = require('react-icons/tb')
-
-
-      icons.push(FiSmartphone, MdOutlineNotificationsActive, FaRegCreditCard, RiMapPinLine, RiAdminLine, BsChatLeftDots, TbCloudUp, FiCamera)
-    break
-    case 'criacao-de-sites':
-    break
-    case 'sistemas-web':
-    break
-    case 'softwares-desktop':
-    break
-  }
-
+  
   return (
     <main className={styles.service}>
       <section className={styles.videoContainer}>

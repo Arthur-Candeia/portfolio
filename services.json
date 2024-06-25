@@ -22,7 +22,7 @@
         "description": "Geolocalização e GPS permitem localizar usuários, serviços ou profissionais utilizando mapas em seu aplicativo."
       },
       {
-        "title": "Painel de Administração",
+        "title": "Painel Administrativo",
         "description": "Gerencie os conteúdos do seu app, como clientes, informações dentro do seu painel."
       },
       {
@@ -36,6 +36,126 @@
       {
         "title": "Câmera Integrada",
         "description": "Permite o uso da câmera para captura de fotos e vídeos diretamente no aplicativo, enriquecendo a experiência do usuário."
+      }
+    ]
+  },
+  {
+    "find_name": "criacao-de-sites",
+    "videoUrl": "/videos/sites.mp4",
+    "title": "Criação de Sites",
+    "description": "Tenha seu próprio site e torne seu negócio ainda mais profissional!",
+    "cards": [
+      {
+        "title": "Responsividade",
+        "description": "Acesse em celulares, tablets, computadores e outros dispositivos."
+      },
+      {
+        "title": "Pagamentos Online",
+        "description": "Venda seus produtos e serviços e aceite PIX, boleto e cartão de crédito."
+      },
+      {
+        "title": "Certificado SSL",
+        "description": "Segurança com criptografia (HTTPS) para seus clientes."
+      },
+      {
+        "title": "WhatsApp Integrado",
+        "description": "Adicione o botão do WhatsApp em seu site, levando diretamente para seu contato."
+      },
+      {
+        "title": "GPS e Mapas",
+        "description": "Geolocalização e GPS permitem localizar usuários, serviços ou profissionais utilizando mapas em seu site."
+      },
+      {
+        "title": "Velocidade",
+        "description": "Seu site com carregamento rápido seguindo as melhores práticas do mercado."
+      },
+      {
+        "title": "Dados em Nuvem",
+        "description": "Permite que os usuários salvem dados e arquivos online, garantindo acesso a partir de qualquer dispositivo conectado à internet."
+      },
+      {
+        "title": "Otimização para SEO",
+        "description": "Site otimizado para obter excelentes resultados no Google."
+      }
+    ]
+  },
+  {
+    "find_name": "sistemas-web",
+    "videoUrl": "/videos/web.mp4",
+    "title": "Sistemas Web",
+    "description": "Aprimore seu gerenciamento com um sistema web sob medida para você!",
+    "cards": [
+      {
+        "title": "Responsividade",
+        "description": "Acesse em celulares, tablets, computadores e outros dispositivos."
+      },
+      {
+        "title": "Pagamentos Online",
+        "description": "Venda seus produtos e serviços e aceite PIX, boleto e cartão de crédito."
+      },
+      {
+        "title": "Certificado SSL",
+        "description": "Segurança com criptografia (HTTPS) para em seus processos."
+      },
+      {
+        "title": "Painel Administrativo",
+        "description": "Gerencie os conteúdos do seu sistema diretamente do seu painel."
+      },
+      {
+        "title": "Automatizações",
+        "description": "Automatize seus processos, economizando tempo nas operações. Tudo isso feito com com servidores para realizar tarefas."
+      },
+      {
+        "title": "Acesso Online",
+        "description": "Acesse seu sistema a qualquer momento de forma online com total segurança e velocidade."
+      },
+      {
+        "title": "Dados em Nuvem",
+        "description": "Permite que os usuários salvem dados e arquivos online, garantindo acesso a partir de qualquer dispositivo conectado à internet."
+      },
+      {
+        "title": "Envio de E-mails",
+        "description": "Integração para envio de e-mails e relatórios em seu sistema."
+      }
+    ]
+  },
+  {
+    "find_name": "softwares-desktop",
+    "videoUrl": "/videos/desktop.mp4",
+    "title": "Softwares Desktop",
+    "description": "aprimore seu gerenciamento com um sistema web sob medida para você!",
+    "cards": [
+      {
+        "title": "Software Multiplataforma",
+        "description": "Garante que o software funcione em diferentes sistemas operacionais, como Windows, macOS e Linux, aumentando a acessibilidade."
+      },
+      {
+        "title": "Criptografia de Dados",
+        "description": "Protege informações sensíveis contra acessos não autorizados, garantindo a segurança e privacidade dos usuários."
+      },
+      {
+        "title": "Velocidade",
+        "description": "Seu programa com carregamento rápido seguindo as melhores práticas."
+      },
+      {
+        "title": "Painel Administrativo",
+        "description": "Gerencie os conteúdos do seu software diretamente do seu painel."
+      },
+      {
+        "title": "Automatizações",
+        "description": "Automatize seus processos, economizando tempo nas operações. Tudo isso feito com com servidores para realizar tarefas."
+      },
+      {
+        "title": "Compatibilidade de Arquivos",
+        "description": "Assegura que o software possa abrir, editar e salvar arquivos em diferentes formatos, aumentando a versatilidade."
+      },
+      {
+        "title": "Dados em Nuvem",
+        "description": "Permite que os usuários salvem dados e arquivos online, garantindo acesso a partir de qualquer dispositivo conectado à internet."
+      },
+      {
+        "title": "Modo Offline",
+        "description": "Garante que o software possa ser utilizado sem conexão à internet, aumentando a flexibilidade e disponibilidade."
       }
     ]
   }

@@ -1,0 +1,1 @@
+export type serviceType = 'aplicativos' | 'criacao-de-sites' | 'sistemas-web' | 'softwares-desktop'
