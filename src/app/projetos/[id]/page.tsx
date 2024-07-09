@@ -37,7 +37,7 @@ export default function Page({params: {id}}: {params: {id: string}}) {
         <div className={styles.content}>
           <h1 className={styles.title}>{name}</h1>
           <p className={styles.description}>{description}</p>
-          <p>Desenvolvido em {created_at}</p>
+          <p>Entregue em {created_at}</p>
           <Link href={`${project["link-external"]}`} target="_blank" rel="external">Visite 🔗</Link>
         </div>
       </section>

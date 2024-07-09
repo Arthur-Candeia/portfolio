@@ -3,9 +3,10 @@ import { Card } from '@/components/servicos/Card'
 import { Budget } from '@/components/common/Budget'
 import { serviceType } from '@/schemas/serviceType'
 import Link from 'next/link'
+import { serviceIcons } from '@/utilities/serviceIcons.utility'
+import { Suspense } from 'react'
 import services from '@/../services.json'
 import styles from "@/styles/servicos.module.scss"
-import { serviceIcons } from '@/utilities/serviceIcons.utility'
 
 export default function Page({params: {name}}: {params: {name: serviceType}}) {
   const service = services.find((element) => element.find_name === name)
@@ -16,9 +17,11 @@ export default function Page({params: {name}}: {params: {name: serviceType}}) {
   return (
     <main className={styles.service}>
       <section className={styles.videoContainer}>
-        <video preload="none" autoPlay muted loop>
-          <source src={videoUrl} type="video/mp4" />
-        </video>
+        <Suspense fallback={<p>Loading video...</p>}>
+          <video preload="none" autoPlay muted loop>
+            <source src={videoUrl} type="video/mp4" />
+          </video>
+        </Suspense>
         <div>
           <p className={styles.serviceTitle}>{title}</p>
           <p className={styles.serviceDescription}>{description}</p>
